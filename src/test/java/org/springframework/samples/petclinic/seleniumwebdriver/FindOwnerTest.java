@@ -34,6 +34,8 @@ public class FindOwnerTest {
 
 		Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"lastNameGroup\"]/div/span/div/p")).isDisplayed());
 
+		Thread.sleep(100000);
+
 	}
 
 }
