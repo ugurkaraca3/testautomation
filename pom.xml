@@ -171,7 +171,7 @@
 				<executions>
 					<execution>
 						<id>nohttp-checkstyle-validation</id>
-						<phase>validate</phase>
+						<phase>none</phase>
 						<configuration>
 							<configLocation>src/checkstyle/nohttp-checkstyle.xml</configLocation>
 							<suppressionsLocation>src/checkstyle/nohttp-checkstyle-suppressions.xml</suppressionsLocation>
@@ -181,7 +181,7 @@
 							<excludes>**/.git/**/*,**/.idea/**/*,**/target/**/,**/.flattened-pom.xml,**/*.class</excludes>
 						</configuration>
 						<goals>
-							<goal>check</goal>
+							<goal>none</goal>
 						</goals>
 					</execution>
 				</executions>
