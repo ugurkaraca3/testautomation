@@ -145,9 +145,9 @@
 				<version>${spring-format.version}</version>
 				<executions>
 					<execution>
-						<phase>validate</phase>
+
 						<goals>
-							<goal>validate</goal>
+
 						</goals>
 					</execution>
 				</executions>
