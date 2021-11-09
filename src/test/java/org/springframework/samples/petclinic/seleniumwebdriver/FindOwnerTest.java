@@ -25,7 +25,7 @@ public class FindOwnerTest {
 
 	@Test
 	public void test() {
-		driver.get("http://192.168.83.1:8088/");
+		driver.get("https://192.168.83.1:8088/");
 		System.out.println(driver.findElement(By.cssSelector("a[href=\"/owners/find\"]")).getText());
 		driver.findElement(By.cssSelector("a[href=\"/owners/find\"]")).click();
 
