@@ -13,19 +13,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class FindOwnerTest {
 	WebDriver driver;
 
-	@BeforeTest
-	public void setUp() {
+	@Test
+	public void test() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().fullscreen();
 		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
-	}
-
-	@Test
-	public void test() {
-		driver.get("https://192.168.83.1:8088/");
+		driver.get("http://localhost:8088/");
 		System.out.println(driver.findElement(By.cssSelector("a[href=\"/owners/find\"]")).getText());
 		driver.findElement(By.cssSelector("a[href=\"/owners/find\"]")).click();
 
