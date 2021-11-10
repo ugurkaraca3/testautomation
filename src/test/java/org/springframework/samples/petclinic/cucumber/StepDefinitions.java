@@ -56,6 +56,7 @@ public class StepDefinitions {
 	@When("Search LastName")
 	public void search_last_name(io.cucumber.datatable.DataTable dataTable) {
 		List<String> data = dataTable.asList();
+	
 		driver.findElement(By.cssSelector("input[id=\"lastName\"]")).sendKeys(data.get(1));
 	}
 

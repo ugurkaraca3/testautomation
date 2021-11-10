@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4363" started-at="2021-11-10T08:25:16Z" finished-at="2021-11-10T08:25:20Z">
+  <suite name="Default suite" duration-ms="9875" started-at="2021-11-10T08:40:36Z" finished-at="2021-11-10T08:40:46Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.springframework.samples.petclinic.cucumber.runnerTest@475e586c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="4363" started-at="2021-11-10T08:25:16Z" finished-at="2021-11-10T08:25:20Z">
+    <test name="Default test" duration-ms="9875" started-at="2021-11-10T08:40:36Z" finished-at="2021-11-10T08:40:46Z">
       <class name="org.springframework.samples.petclinic.cucumber.runnerTest">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.springframework.samples.petclinic.cucumber.runnerTest@475e586c]" name="setUpClass" is-config="true" duration-ms="307" started-at="2021-11-10T08:25:16Z" finished-at="2021-11-10T08:25:16Z">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.springframework.samples.petclinic.cucumber.runnerTest@475e586c]" name="setUpClass" is-config="true" duration-ms="312" started-at="2021-11-10T08:40:36Z" finished-at="2021-11-10T08:40:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@26f1249d]]>
+                <![CDATA[org.testng.TestRunner@33a053d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.springframework.samples.petclinic.cucumber.runnerTest@475e586c]" name="runScenario" duration-ms="4001" started-at="2021-11-10T08:25:16Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-10T08:25:20Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.springframework.samples.petclinic.cucumber.runnerTest@475e586c]" name="runScenario" duration-ms="9527" started-at="2021-11-10T08:40:36Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-10T08:40:46Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.springframework.samples.petclinic.cucumber.runnerTest@475e586c]" name="tearDownClass" is-config="true" duration-ms="24" started-at="2021-11-10T08:25:20Z" finished-at="2021-11-10T08:25:20Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.springframework.samples.petclinic.cucumber.runnerTest@475e586c]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2021-11-10T08:40:46Z" finished-at="2021-11-10T08:40:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -7,7 +7,7 @@ Feature: Petclinic Test
 	And Find Owner is clicked
 	And Search LastName
 	|LastName|
-	|karaca|	
+	|karaca|		
 	And Search is clicked
 	Then Owner Verified
 	
