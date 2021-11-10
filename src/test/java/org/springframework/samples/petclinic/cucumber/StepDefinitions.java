@@ -7,12 +7,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -55,12 +56,23 @@ public class StepDefinitions {
 	@When("Search LastName")
 	public void search_last_name(io.cucumber.datatable.DataTable dataTable) {
 		List<String> data = dataTable.asList();
-		System.out.println(data.get(1));
 		driver.findElement(By.cssSelector("input[id=\"lastName\"]")).sendKeys(data.get(1));
 	}
 
 	@When("Search is clicked")
 	public void search_is_clicked() {
 		driver.findElement(By.cssSelector("input[id=\"lastName\"]")).sendKeys(Keys.ENTER);
+
+	}
+
+	@Then("Owner Verified")
+	public void owner_verified() {
+		Assert.assertTrue(driver.findElement(By.cssSelector("a[href=\"11/edit\"]")).isDisplayed());
+	}
+
+	@After
+	public void cleanUp() throws InterruptedException {
+		Thread.sleep(5000);
+		driver.quit();
 	}
 }

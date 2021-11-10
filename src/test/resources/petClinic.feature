@@ -9,6 +9,7 @@ Feature: Petclinic Test
 	|LastName|
 	|karaca|	
 	And Search is clicked
+	Then Owner Verified
 	
 	
 
