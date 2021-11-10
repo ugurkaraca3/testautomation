@@ -5,8 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -16,6 +16,8 @@ public class FindOwnerTest {
 
 	@Test
 	public void test() throws InterruptedException {
+//		ChromeOptions cr = new ChromeOptions();
+//		cr.addArguments("--headless");
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().fullscreen();
@@ -33,7 +35,7 @@ public class FindOwnerTest {
 		driver.findElement(By.cssSelector("button[class=\"btn btn-default\"][type=\"submit\"]")).click();
 
 		Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"lastNameGroup\"]/div/span/div/p")).isDisplayed());
-
+		System.out.println("ugurkar");
 		Thread.sleep(100000);
 
 	}

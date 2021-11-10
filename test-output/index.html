@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\z004dy2k\AppData\Local\Temp\testng-eclipse-3443126\testng-customsuite.xml</span>
+                    <span>C:\Users\z004dy2k\AppData\Local\Temp\testng-eclipse-504197231\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Default_suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.springframework.samples.petclinic.seleniumwebdriver.FindOwnerTest" hash-for-method="test">test</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="org.springframework.samples.petclinic.cucumber.runnerTest" hash-for-method="runScenario(&quot;Verification of successful owner find&quot;, &quot;Optional[Petclinic Test]&quot;)">runScenario("Verification of successful owner find", "Optional[Petclinic Test]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +120,17 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.springframework.samples.petclinic.seleniumwebdriver.FindOwnerTest</span>
+              <span class="class-name">org.springframework.samples.petclinic.cucumber.runnerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test">
-                  </a> <!-- test -->
-                  <span class="method-name">test</span>
+                  <a name="runScenario(&quot;Verification of successful owner find&quot;, &quot;Optional[Petclinic Test]&quot;)">
+                  </a> <!-- runScenario("Verification of successful owner find", "Optional[Petclinic Test]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verification of successful owner find", "Optional[Petclinic Test]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +138,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\z004dy2k\AppData\Local\Temp\testng-eclipse-3443126\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\z004dy2k\AppData\Local\Temp\testng-eclipse-504197231\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +147,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.springframework.samples.petclinic.seleniumwebdriver.FindOwnerTest&quot;/&gt;
+      &lt;class name=&quot;org.springframework.samples.petclinic.cucumber.runnerTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -168,6 +171,14 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -186,14 +197,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test')
-data.setCell(0, 2, 'org.springframework.samples.petclinic.seleniumwebdriver.FindOwnerTest')
-data.setCell(0, 3, 5680);
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'org.springframework.samples.petclinic.cucumber.runnerTest')
+data.setCell(0, 3, 4001);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,11 +230,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.springframework.samples.petclinic.seleniumwebdriver.FindOwnerTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">test</span>
+              <div class="chronological-class-name">org.springframework.samples.petclinic.cucumber.runnerTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@26f1249d)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verification of successful owner find", "Optional[Petclinic Test]")</span>
+                <span class="method-start">320 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">4324 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
